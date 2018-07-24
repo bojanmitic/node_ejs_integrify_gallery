@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif,Helvetica, Arial;
+    text-decoration: none;
+    background-image: url(backgroundimage.jpg);
+    background-repeat: no-repeat;
+    color:white;
+}
+h1, h2,h3{
+    font-weight: 300;
+    text-shadow: 2px 2px #404142;
+}
+a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 2px 2px #404142;
+    font-size: 130%;
+}
+.student{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.photo-title{
+    text-align: center;
+}
+.student-img{
+    height: 45em;
+    box-shadow: 2px 2px #404142;
+}
+.data{
+    padding-top: 30%;
+}
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+}
+.back-btn{
+   text-align:center;
+    padding: 5%;
+}
+.name{
+    padding:5%;
+}
