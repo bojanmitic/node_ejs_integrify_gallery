@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const data  = require('./data');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const fileUpload = require('express-fileupload'); 
 
 app.use(fileUpload());
@@ -42,10 +42,9 @@ app.post('/addStudent',(req,res)=>{
     student.src = photo.name;
     student.alt = photo.name;
     data.push(student);
-    console.log(data);
     res.redirect('/');
 });
 
-app.listen(3000, ()=>{
-    console.log('Server is running on port 3000');
+app.listen(port, ()=>{
+    console.log(`serveris running on port ${port}`);
 });
